@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #FF385C;
+    --background-color: #FFFFFF;
+    --grey: #6A6A6A;
+    --secondary-color: #F7F7F7;
+    --black: #222222;
+    --eb-color: #EBEBEB;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color);
+}
+
+/* NAVBAR TOP */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12.5px 20px;
+    color: var(--black);
+    max-width: 95vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    position: relative;
+    
+}
+.nav-links {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-links a {
+    color: var(--grey);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+
+    padding: 12.5px;
+    background-color: transparent;
+    border-radius: 35px;
+}
+.nav-links a.active {
+    color: var(--black);
+}
+.nav-links a:hover {
+    background-color: var(--secondary-color);
+}
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: .9em;
+}
+.icon {
+    font-size: 1.2em;
+}
+.profile-btn {
+    padding: 7.5px 12.5px;
+    background: transparent;
+    color: var(--black);
+    cursor: pointer;
+    display: flex;
+    border: 2px solid var(--secondary-color);
+    border-radius: 35px;
+}
+
+.user-profile svg {
+    color: var(--grey);
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.logo {
+    display: flex;
+    color: var(--primary-color);
+    text-transform: lowercase;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.logo h2 {
+    font-size: 1.3em;
+    margin-top: 20px;
+    letter-spacing: -1px;
+}
+
+.right-section span {
+    margin-right: 15px;
+    padding: 12.5px;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 35px;
+}
+.right-section span:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+.right-section .icon {
+    margin-right: 20px;
+}
+
+.right-section .fa-bars {
+    font-size: 1.2em;
+    margin-top: 7.5px;
+    margin-right: 12.5px;
+}
+
+
+
+/* SEARCH */
+
+
+.search-container {
+    display: flex;
+    background: #FFFFFF;
+    padding: 15px 15px;
+    border-radius: 50px;
+    box-shadow: 4px 0px 110px -35px rgba(0,0,0,0.75);
+    align-items: center;
+    min-width: 70vw;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    border: 3px solid var(--secondary-color);
+    justify-content: space-between;
+}
+
+.search_container div, .search-container p, .search-container h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.destination_box {
+    margin-left: 20px;
+}
+
+.search-container h3 {
+    font-size: .8em;
+    font-weight: 500;
+}
+.search-container p {
+    font-size: .8em;
+    font-weight: 500;
+    color: var(--grey);
+    margin-top: 3px;
+}
+
+.horizontal_sep {
+    background-color: var(--grey);
+    height: 28px;
+    width: 1px;
+}
+
+.search-button {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 15px 17px;
+    font-size: .9em;
+    border: none;
+    cursor: pointer;
+}
